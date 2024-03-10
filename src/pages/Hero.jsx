@@ -46,10 +46,10 @@ const Hero = () => {
     <div className="bg-slate-200 w-full h-full">
     <NavBar />
       <div className="mt-4 flex flex-col md:flex-row justify-center items-center gap-x-4">
-        <button className="bg-blue-400 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300 mb-2 md:mb-0" onClick={() => setShowType("table")}>
+        <button className="bg-blue-600 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300 mb-2 md:mb-0" onClick={() => setShowType("table")}>
         Table
         </button>
-        <button className="bg-blue-400 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300" onClick={() => setShowType("card")}>
+        <button className="bg-blue-600 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300" onClick={() => setShowType("card")}>
         Card
         </button>
       

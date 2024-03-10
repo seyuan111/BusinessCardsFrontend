@@ -34,7 +34,7 @@ const NavBar = () => {
             <div className={nav ? "duration-300 pb-4 w-full bg-gradient-to-r bg-gray-400 absolute top-[70px] left-0 text-center justify-center flex" : "absolute left-[-100%]"}>
                 <ul className="text-white">
                     <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/Hero">View Books</Link></li>
-                    <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/books/create">Add Books</Link></li>
+                    <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/cards/create">Add Books</Link></li>
                     <button className="ml-4 cursor-pointer font-bold font-Cinzel"><Link to="/Login">Login</Link></button>
                 </ul>
             </div>

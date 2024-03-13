@@ -29,25 +29,21 @@ const DetailedCards = () => {
         <BackButton />
         <h1 className="text-3xl my-6 ml-10">Detailed Cards</h1>
         {loading ? (<Blank />) : (
-            <div className="flex flex-col border-2 border-blue-400 rounded-md">
+            <div className="m-6 flex flex-col border-2 border-blue-400 rounded-md">
                 <div className="p-4">
                     <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
                     <span>{cards.name}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
-                    <span>{cards.age}</span>
-                </div>
-                <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
+                    <span className="text-xl mr-4 text-slate-600 font-bold">Email</span>
                     <span>{cards.email}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
+                    <span className="text-xl mr-4 text-slate-600 font-bold">Occupation</span>
                     <span>{cards.occupation}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
+                    <span className="text-xl mr-4 text-slate-600 font-bold">Contact</span>
                     <span>{cards.contact}</span>
                 </div>
                 <div className="p-4">

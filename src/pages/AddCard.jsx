@@ -7,7 +7,6 @@ import NavBar from '../component/NavBar'
 
 const AddCard = () => {
     const [name, setName] = useState("")
-    const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
     const [occupation, setOccupation] = useState("")
     const [contact, setContact] = useState("")
@@ -17,7 +16,6 @@ const AddCard = () => {
     const handleSaveCards = () => {
         const data = {
             name,
-            age,
             email,
             occupation,
             contact
@@ -53,16 +51,6 @@ const AddCard = () => {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="rounded-xl border-2 border-gray-400 px-4 py-2 w-full" 
-                />
-            </div>
-
-            <div className="my-4">
-                <label className="text-xl mr-4 text-slate-600">Age</label>
-                <input
-                    type="text"
-                    value={age}
-                    onChange={(e) => setAge(e.target.value)}
                     className="rounded-xl border-2 border-gray-400 px-4 py-2 w-full" 
                 />
             </div>

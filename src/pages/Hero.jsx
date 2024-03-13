@@ -43,7 +43,7 @@ const Hero = () => {
       };
 
   return (
-    <div className="bg-slate-200 w-full h-full">
+    <div className="w-full h-full">
     <NavBar />
       <div className="mt-4 flex flex-col md:flex-row justify-center items-center gap-x-4">
         <button className="bg-blue-600 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300 mb-2 md:mb-0" onClick={() => setShowType("table")}>
@@ -54,7 +54,7 @@ const Hero = () => {
         </button>
       
       </div>
-      <div className="bg-slate-200 flex sm:flex-col justify-between items-center px-6">
+      <div className="flex sm:flex-col justify-between items-center px-6">
         <h1 className="text-3xl my-8">My Business Cards</h1>
         <Link to="/cards/create"><MdOutlineAddBox className="text-blue-600 text-3xl" /></Link>
       </div>

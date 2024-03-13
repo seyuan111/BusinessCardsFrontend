@@ -18,11 +18,11 @@ const BusinessCards = ( {cards} ) => {
             {item.contact}
           </h2>
           <div className="flex justify-start items-center gap-x-2">
-            <FaRegUser className="text-blue-400 text-2xl" />
+            <FaRegUser className="text-blue-400 text-xl" />
             <h2 className="my-1">{item.name}</h2>
           </div>
           <div className="flex justify-start items-center gap-x-2">
-            <BiUserCircle className="text-blue-400 text-2xl" />
+            <BiUserCircle className="text-blue-400 text-xl" />
             <h2 className="my-1">{item.email}</h2>
           </div>
           <div className="flex justify-between items-center gap-x-2 mt-4 p-4">

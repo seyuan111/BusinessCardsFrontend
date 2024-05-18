@@ -46,17 +46,16 @@ const Hero = () => {
     <div className="w-full h-full">
     <NavBar />
       <div className="mt-4 flex flex-col md:flex-row justify-center items-center gap-x-4">
-        <button className="bg-blue-600 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300 mb-2 md:mb-0" onClick={() => setShowType("table")}>
+        <button className="mx-3 border px-4 py-1 rounded-lg text-white duration-300 mb-2 md:mb-0" onClick={() => setShowType("table")}>
         Table
         </button>
-        <button className="bg-blue-600 hover:bg-slate-500 px-4 py-1 rounded-lg text-white duration-300" onClick={() => setShowType("card")}>
+        <button className="mx-3 border px-4 py-1 rounded-lg text-white duration-300" onClick={() => setShowType("card")}>
         Card
         </button>
-      
       </div>
       <div className="flex sm:flex-col justify-between items-center px-6">
         <h1 className="text-3xl my-8">My Business Cards</h1>
-        <Link to="/cards/create"><MdOutlineAddBox className="text-blue-600 text-3xl" /></Link>
+        <Link to="/cards/create"><MdOutlineAddBox className="text-white text-3xl" /></Link>
       </div>
       {loading ? <Blank /> : showType === "table" ? (<BusinessTable cards={cards}/>) : (<BusinessCards cards={cards}/>)}
     </div>

@@ -12,28 +12,28 @@ const BusinessCards = ( {cards} ) => {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {cards.map((item) => (
-        <div key={item._id} className="border-2 border-gray-500 rounded-lg px-4 py-2 m-4 relative hover:shadow-md">
-          <h2 className="absolute top-1 right-2 px-4 py-1 bg-yellow-300 rounded-md">
-            <FaPhone className="text-blue-400 text-2xl" />
+        <div key={item._id} className="border-2 rounded-lg px-4 py-2 m-4 relative hover:shadow-md">
+          <h2 className="absolute top-1 right-2 px-4 py-1 mx-3 rounded-lg">
+            <FaPhone className="text-neutral-400 text-2xl" />
             {item.contact}
           </h2>
           <div className="flex justify-start items-center gap-x-2">
-            <FaRegUser className="text-blue-400 text-xl" />
+            <FaRegUser className="text-neutral-400 text-xl" />
             <h2 className="my-1">{item.name}</h2>
           </div>
           <div className="flex justify-start items-center gap-x-2">
-            <BiUserCircle className="text-blue-400 text-xl" />
+            <BiUserCircle className="text-neutral-400 text-xl" />
             <h2 className="my-1">{item.email}</h2>
           </div>
           <div className="flex justify-between items-center gap-x-2 mt-4 p-4">
           <Link to={`/cards/details/${item._id}`}>
-            <BsInfoCircle className="text-2xl text-purple-600 hover:text-blue-600"/>
+            <BsInfoCircle className="text-2xl text-white hover:text-blue-600"/>
           </Link>
           <Link to={`/cards/edit/${item._id}`}>
-            <AiOutlineEdit className="text-2xl text-purple-600 hover:text-blue-600"/>
+            <AiOutlineEdit className="text-2xl text-white hover:text-blue-600"/>
           </Link>
           <Link to={`/cards/delete/${item._id}`}>
-            <MdOutlineDelete className="text-2xl text-purple-600 hover:text-blue-600"/>
+            <MdOutlineDelete className="text-2xl text-white hover:text-blue-600"/>
           </Link>
         </div>
         </div>

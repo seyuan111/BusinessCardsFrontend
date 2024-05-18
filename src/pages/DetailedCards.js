@@ -29,29 +29,29 @@ const DetailedCards = () => {
         <BackButton />
         <h1 className="text-3xl my-6 ml-10">Detailed Cards</h1>
         {loading ? (<Blank />) : (
-            <div className="m-6 flex flex-col border-2 border-blue-400 rounded-md">
+            <div className="m-6 flex flex-col border-2 rounded-md">
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Name</span>
+                    <span className="text-xl mr-4 text-neutral-400">Name:</span>
                     <span>{cards.name}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Email</span>
+                    <span className="text-xl mr-4 text-neutral-400">Email:</span>
                     <span>{cards.email}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Occupation</span>
+                    <span className="text-xl mr-4 text-neutral-400">Occupation:</span>
                     <span>{cards.occupation}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Contact</span>
+                    <span className="text-xl mr-4 text-neutral-400">Contact:</span>
                     <span>{cards.contact}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Create Time</span>
+                    <span className="text-xl mr-4 text-neutral-400">Create Time:</span>
                     <span>{new Date(cards.createdAt).toString()}</span>
                 </div>
                 <div className="p-4">
-                    <span className="text-xl mr-4 text-slate-600 font-bold">Update Time</span>
+                    <span className="text-xl mr-4 text-neutral-400">Update Time:</span>
                     <span>{new Date(cards.updatedAt).toString()}</span>
                 </div>
             </div>

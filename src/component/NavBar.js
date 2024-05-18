@@ -12,7 +12,7 @@ const NavBar = () => {
     }
 
   return (
-    <div className="w-full h-[70px] bg-gradient-to-r from-cyan-500 to-blue-500 py-10 z-10">
+    <div className="w-full h-[70px] border-neutral-700/90 bg-neutral-600/90 py-10 z-10">
 
         <div className="max-w-[1240px] mx-auto flex px-4 justify-between items-center h-full">
 
@@ -23,6 +23,7 @@ const NavBar = () => {
 
             <div className="hidden md:flex">
                 <ul className="flex text-white font-Zeyada items-center text-xl">
+                <li className="ml-4 cursor-pointer font-bold"><Link to="/">Home</Link></li>
                     <li className="ml-4 cursor-pointer font-bold"><Link to="/Hero">View Cards</Link></li>
                     <li className="ml-4 cursor-pointer font-bold"><Link to="/cards/create">Add Card</Link></li>
                     <button className="ml-4 cursor-pointer font-bold"><Link to="/Login">Login</Link></button>
@@ -30,11 +31,12 @@ const NavBar = () => {
             </div>
 
             <div onClick={handleNav} className="block md:hidden">
-                {nav ? <AiOutlineClose size={30} className="text-black" /> : <AiOutlineMenu size={30} className="text-black"/>}
+                {nav ? <AiOutlineClose size={30} className="text-white" /> : <AiOutlineMenu size={30} className="text-white"/>}
             </div>
 
-            <div className={nav ? "duration-300 pb-4 w-full bg-gradient-to-r bg-gray-400 absolute top-[70px] left-0 text-center justify-center flex" : "absolute left-[-100%]"}>
+            <div className={nav ? "duration-300 pb-4 w-full border-neutral-700/90 bg-neutral-600/90 absolute top-[70px] left-0 text-center justify-center flex" : "absolute left-[-100%]"}>
                 <ul className="text-white">
+                    <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/Home">Home</Link></li>
                     <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/Hero">View Cards</Link></li>
                     <li className="ml-4 mb-4 cursor-pointer font-bold font-Cinzel"><Link to="/cards/create">Add Cards</Link></li>
                     <button className="ml-4 cursor-pointer font-bold font-Cinzel"><Link to="/Login">Login</Link></button>
